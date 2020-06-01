@@ -111,11 +111,15 @@ img {
 
 .header {
     background-size: cover;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(251, 227, 137, .9)), to(rgba(243, 138, 129, .9))), url(../images/banner.png);
+    background-image: -o-linear-gradient(bottom, rgba(251, 227, 137, .9) 0%, rgba(243, 138, 129, .9) 100%), url(../images/banner.png);
     background-image: linear-gradient(0deg, rgba(251, 227, 137, .9) 0%, rgba(243, 138, 129, .9) 100%), url(../images/banner.png);
 }
 
-@media (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
     .header {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(251, 227, 137, .9)), to(rgba(243, 138, 129, .9))), url(../images/banner@2x.png);
+        background-image: -o-linear-gradient(bottom, rgba(251, 227, 137, .9) 0%, rgba(243, 138, 129, .9) 100%), url(../images/banner@2x.png);
         background-image: linear-gradient(0deg, rgba(251, 227, 137, .9) 0%, rgba(243, 138, 129, .9) 100%), url(../images/banner@2x.png);
     }
 }
@@ -135,9 +139,15 @@ img {
 }
 
 .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
 }
 
 .logotype {
@@ -150,21 +160,34 @@ img {
 
 .navigation-menu {
     width: 626px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .menu-list {
     width: 492px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .menu-icons {
     width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .menu-list__link {
@@ -202,6 +225,8 @@ img {
 .menu-icons__item :hover::after {
     opacity: 1;
     visibility: visible;
+    -webkit-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
     transition: opacity 200ms linear;
 }
 
@@ -299,9 +324,14 @@ img {
 }
 
 .services__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .services__items {
@@ -409,8 +439,12 @@ img {
 }
 
 .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .overlay-block{
@@ -444,6 +478,8 @@ img {
 }
 
 .overlay {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(240, 226, 144, .9)), to(rgba(233, 137, 160, .9)));
+    background-image: -o-linear-gradient(bottom, rgba(240, 226, 144, .9) 0%, rgba(233, 137, 160, .9) 100%);
     background-image: linear-gradient(0deg, rgba(240, 226, 144, .9) 0%, rgba(233, 137, 160, .9) 100%);
     width: 100%;
     height: 100%;
@@ -457,22 +493,33 @@ img {
 .team-list__item:hover .overlay {
     opacity: 1;
     visibility: visible;
-    transform: translate(-10px, -10px);
-    box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
+            box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
 }
 
 .team-list__item:hover .team-list-image {
-    transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
 }
 
 .button-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: absolute;
     width: 227px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .button-list__item {
@@ -504,9 +551,15 @@ img {
 .footer-wrapper {
     padding: 10px 0 10px;
     border-top: 1px solid #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer__text {
@@ -521,6 +574,8 @@ img {
 }
 
 .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -530,6 +585,42 @@ img {
     background-color: #ffffff;
     border: 1px solid #e7e7e7;
     padding-left: 14px;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+}
+
+input::-moz-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+}
+
+input:-ms-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+}
+
+input::-ms-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
 }
 
 input::placeholder {
