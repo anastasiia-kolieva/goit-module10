@@ -1,0 +1,238 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat-v14-latin_cyrillic-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin_cyrillic-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* kaushan-script-regular - latin */
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kaushan Script'), local('KaushanScript-Regular'),
+        url('../fonts/kaushan-script-v8-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/kaushan-script-v8-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Header */
+
+.header {
+    background-size: cover;
+    background-image: linear-gradient(0deg, rgba(251, 227, 137, .9) 0%, rgba(243, 138, 129, .9) 100%), url(../images/banner.png);
+}
+
+@media (min-resolution: 192dpi) {
+    .header {
+        background-image: linear-gradient(0deg, rgba(251, 227, 137, .9) 0%, rgba(243, 138, 129, .9) 100%), url(../images/banner@2x.png);
+    }
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    padding-top: 30px; 
+    padding-bottom: 230px;
+}
+
+.header__navigation {
+    margin-bottom: 200px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logotype {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Отступ 3*/
+
+.navigation-menu {
+    width: 626px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list {
+    width: 492px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-icons {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list__link {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Отступы 1.5 */
+
+.menu-list__link:hover {
+    color: #fce38a;
+}
+
+.menu-list__item,
+.menu-icons__item {
+    position: relative;
+}
+
+.menu-list__item ::after,
+.menu-icons__item ::after {
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    bottom: -10px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-list__item :hover::after,
+.menu-icons__item :hover::after {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 200ms linear;
+}
+
+.menu-icons__cart,
+.menu-icons__glass {
+    width: 20px;
+    height: 20px;
+}
+
+/* .menu-icons__cart--hover :hover,
+.menu-icons__glass--hover :hover {
+    fill: #fce38a;
+} */
+/* Не срабатывает изменение цвета при навеждении на свг иконку */
+
+.header__description {
+    font-size: 72px;
+    color: #ffffff;
+    font-family: "Kaushan Script";
+    font-weight: 400;
+    text-align: center;
+}
+
+/* остпупы 5 */
+
+.header__description-wrapper {
+    margin-bottom: 48px;
+}
+
+.header__title-wrapper {
+    margin: 0 auto 114px;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 150px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Отступ 11 */
+
+.header__title--br {
+    display: block;
+}
+
+.header__btn-wrapper {
+    text-align: center;
+}
+
+.header__btn {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    padding: 10px 28px;
+    cursor: pointer;
+}
