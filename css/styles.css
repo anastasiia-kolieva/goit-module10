@@ -109,8 +109,6 @@ img {
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* Header */
-
 .header {
     background-size: cover;
     background-image: linear-gradient(0deg, rgba(251, 227, 137, .9) 0%, rgba(243, 138, 129, .9) 100%), url(../images/banner.png);
@@ -150,8 +148,6 @@ img {
     cursor: pointer;
 }
 
-/* Отступ 3*/
-
 .navigation-menu {
     width: 626px;
     display: flex;
@@ -179,8 +175,6 @@ img {
     text-align: center;
     text-transform: uppercase;
 }
-
-/* Отступы 1.5 */
 
 .menu-list__link:hover {
     color: #fce38a;
@@ -231,8 +225,6 @@ img {
     text-align: center;
 }
 
-/* остпупы 5 */
-
 .header__description-wrapper {
     margin-bottom: 48px;
 }
@@ -249,8 +241,6 @@ img {
     font-weight: 700;
     text-transform: uppercase;
 }
-
-/* Отступ 11 */
 
 .header__title--br {
     display: block;
@@ -273,8 +263,6 @@ img {
     cursor: pointer;
 }
 
-/* Services */
-
 .services__wrapper {
     padding-top: 54px;
     margin-bottom: 100px;
@@ -291,8 +279,6 @@ img {
     margin: 0 auto;
 }
 
-/* Отступы 2 */
-
 .services__title--work {
     display: block;
     font-size: 24px;
@@ -302,8 +288,6 @@ img {
     text-transform: none;
     margin-bottom: 20px;
 }
-
-/* Отступы 2 */
 
 .services__title-main::after {
     display: block;
@@ -368,8 +352,6 @@ img {
     padding-left: 82px;
 }
 
-/* Отступ 1 */
-
 .services__description {
     font-size: 15px;
     line-height: 24px;
@@ -378,10 +360,6 @@ img {
     font-weight: 400;
     padding-left: 82px;
 }
-
-/* Отступ 1.5 */
-
-/* TEAM */
 
 .team__wrapper {
     margin-bottom: 82px;
@@ -398,8 +376,6 @@ img {
     margin: 0 auto;
 }
 
-/* Отступы 2 */
-
 .team__title--we {
     display: block;
     font-size: 24px;
@@ -410,8 +386,6 @@ img {
     text-transform: none;
     margin-bottom: 20px;
 }
-
-/* Отступы 2 */
 
 .team__title::after {
     display: block;
@@ -433,8 +407,6 @@ img {
     margin: 0 auto;
     margin-bottom: 94px;
 }
-
-/* Отступы 1 */
 
 .team-list {
     display: flex;
@@ -461,8 +433,6 @@ img {
     margin-bottom: 14px;
 }
 
-/* Отступы 1 */
-
 .team-list__item-position {
     font-size: 15px;
     line-height: 24px;
@@ -472,8 +442,6 @@ img {
     font-style: italic;
     text-align: center;
 }
-
-/* Отступы 4.5 */
 
 .overlay {
     background-image: linear-gradient(0deg, rgba(240, 226, 144, .9) 0%, rgba(233, 137, 160, .9) 100%);
@@ -531,4 +499,58 @@ img {
     .button-list__link--hover .button-list__link:hover {
     fill:#fff;
 }
-/* /* Не срабатывает изменение цвета при навеждении на свг иконку */ */
+/* Не срабатывает изменение цвета при навеждении на свг иконку */ 
+
+.footer-wrapper {
+    padding: 10px 0 10px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text {
+    font-size: 14px;
+    color: #333333;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.footer__link {
+    color: #f38181;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-form__input {
+    height: 40px;
+    width: 230px;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    padding-left: 14px;
+}
+
+input::placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+}
+
+.subscribe-form__button {
+    border: none;
+    height: 40px;
+    width: 152px;
+    background-color: #95e1d3;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
