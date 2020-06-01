@@ -73,15 +73,41 @@ img {
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* roboto-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v20-latin_cyrillic-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300italic - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+        url('../fonts/roboto-v20-latin_cyrillic-300italic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v20-latin_cyrillic-300italic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* roboto-regular - latin_cyrillic */
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     src: local('Roboto'), local('Roboto-Regular'),
-         url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+        url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 /* Header */
 
@@ -191,10 +217,10 @@ img {
     height: 20px;
 }
 
-/* .menu-icons__cart--hover :hover,
-.menu-icons__glass--hover :hover {
+.menu-icons__cart--hover .menu-icons__link:hover,
+.menu-icons__glass--hover .menu-icons__link:hover {
     fill: #fce38a;
-} */
+}
 /* Не срабатывает изменение цвета при навеждении на свг иконку */
 
 .header__description {
@@ -249,11 +275,8 @@ img {
 
 /* Services */
 
-.services {
+.services__wrapper {
     padding-top: 54px;
-}
-
-.services__wrapper{
     margin-bottom: 100px;
 }
 
@@ -267,6 +290,7 @@ img {
     text-align: center;
     margin: 0 auto;
 }
+
 /* Отступы 2 */
 
 .services__title--work {
@@ -278,6 +302,7 @@ img {
     text-transform: none;
     margin-bottom: 20px;
 }
+
 /* Отступы 2 */
 
 .services__title-main::after {
@@ -295,7 +320,7 @@ img {
     flex-wrap: wrap;
 }
 
-.services__items{
+.services__items {
     width: 382px;
     margin-bottom: 100px;
     background-position: left 20px top 0;
@@ -332,7 +357,7 @@ img {
 }
 
 
-.services__title{
+.services__title {
     font-size: 14px;
     color: #333333;
     font-family: "Montserrat";
@@ -342,9 +367,10 @@ img {
     margin-bottom: 20px;
     padding-left: 82px;
 }
+
 /* Отступ 1 */
 
-.services__description{
+.services__description {
     font-size: 15px;
     line-height: 24px;
     color: #999999;
@@ -354,3 +380,155 @@ img {
 }
 
 /* Отступ 1.5 */
+
+/* TEAM */
+
+.team__wrapper {
+    margin-bottom: 82px;
+}
+
+
+.team__title {
+    font-size: 30px;
+    color: #333333;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Отступы 2 */
+
+.team__title--we {
+    display: block;
+    font-size: 24px;
+    color: #333333;
+    font-family: "Kaushan Script";
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 20px;
+}
+
+/* Отступы 2 */
+
+.team__title::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 41px auto 50px;
+}
+
+.team__description {
+    width: 980px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 94px;
+}
+
+/* Отступы 1 */
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay-block{
+    position: relative;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.team-list__item {
+    width: 380px;
+}
+
+.team-list__item-name {
+    font-size: 14px;
+    color: #333333;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+/* Отступы 1 */
+
+.team-list__item-position {
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Отступы 4.5 */
+
+.overlay {
+    background-image: linear-gradient(0deg, rgba(240, 226, 144, .9) 0%, rgba(233, 137, 160, .9) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.team-list__item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
+}
+
+.team-list__item:hover .team-list-image {
+    transform: translate(-10px, -10px);
+}
+
+.button-list {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 227px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-list__item {
+    border-color: #f38181;
+    background-color: #fce38a;
+}
+
+.button-list__link {
+    display: block;
+    width: 56px;
+    height: 56px;
+    padding: 14px 14px;
+}
+
+.button-list__link--img {
+    width: 26px;
+    height: 26px;
+}
+
+.button-list__item:hover {
+    background-color: #f38181;
+}
+
+    .button-list__link--hover .button-list__link:hover {
+    fill:#fff;
+}
+/* /* Не срабатывает изменение цвета при навеждении на свг иконку */ */
