@@ -234,13 +234,13 @@ img {
 .menu-icons__glass {
     width: 20px;
     height: 20px;
+    fill: #fff
 }
 
-.menu-icons__cart--hover .menu-icons__link:hover,
-.menu-icons__glass--hover .menu-icons__link:hover {
-    fill: #fce38a;
+.menu-icons__link:hover .menu-icons__cart--hover,
+.menu-icons__link:hover .menu-icons__glass--hover {
+    fill:#fce38a;
 }
-/* Не срабатывает изменение цвета при навеждении на свг иконку */
 
 .header__description {
     font-size: 72px;
@@ -524,7 +524,6 @@ img {
 
 .button-list__item {
     border-color: #f38181;
-    background-color: #fce38a;
 }
 
 .button-list__link {
@@ -532,21 +531,23 @@ img {
     width: 56px;
     height: 56px;
     padding: 14px 14px;
+    color: #f38181;
+    background-color: #fce38a;
 }
 
 .button-list__link--img {
     width: 26px;
     height: 26px;
+    fill: #f38181;
 }
 
-.button-list__item:hover {
+.button-list__link:hover {
     background-color: #f38181;
 }
 
-    .button-list__link--hover .button-list__link:hover {
+.button-list__link:hover .button-list__link--hover {
     fill:#fff;
 }
-/* Не срабатывает изменение цвета при навеждении на свг иконку */ 
 
 .footer-wrapper {
     padding: 10px 0 10px;
